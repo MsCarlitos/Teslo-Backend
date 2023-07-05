@@ -13,7 +13,7 @@ export class SeedController {
   ) {}
 
   @Get()
-  @Auth( ValidRoles.admin )
+  // @Auth( ValidRoles.admin )
   async executedSeed() {
     return this.seedService.runSeed();
   }
